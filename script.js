@@ -37,11 +37,11 @@ function swoosh(e) {
 	e.preventDefault();
 	const anchor = document.querySelectorAll(".display-pick a");
 	anchor.forEach(anch => {
-		anch.classList.remove("fontawesome-circle");
-		anch.classList.add("fontawesome-circle-blank");
+		anch.classList.remove("fas");
+		anch.classList.add("far");
 	});
 
-	e.target.classList.add("fontawesome-circle");
+	e.target.classList.add("fas");
 	if (e.target.id == 1) {
 		display.style.left = "0";
 	}
